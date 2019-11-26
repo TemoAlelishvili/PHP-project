@@ -31,7 +31,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -70,7 +70,11 @@
       <workItem from="1574168651389" duration="1042000" />
       <workItem from="1574229459374" duration="4970000" />
       <workItem from="1574239322047" duration="2877000" />
-      <workItem from="1574321005088" duration="12888000" />
+      <workItem from="1574321005088" duration="13174000" />
+      <workItem from="1574418952369" duration="624000" />
+      <workItem from="1574658842626" duration="1594000" />
+      <workItem from="1574666849167" duration="4017000" />
+      <workItem from="1574761917476" duration="8310000" />
     </task>
     <servers />
   </component>
