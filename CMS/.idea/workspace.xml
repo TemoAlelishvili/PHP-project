@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4ec98ce0-a51b-465d-bd63-615b6d21cd94" name="Default Changelist" comment="" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <list default="true" id="4ec98ce0-a51b-465d-bd63-615b6d21cd94" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/PHP-project/CMS/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP-project/CMS/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP-project/CMS/.idea/webServers.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PHP-project/CMS/admin/includes/update_categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP-project/CMS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/PHP-project/CMS/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP-project/CMS/admin/categories.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP-project/CMS/admin/categories.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PHP-project/CMS/admin/includes/admin_navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/PHP-project/CMS/admin/includes/admin_navigation.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -27,26 +34,37 @@
     <expand />
     <select />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/PHP-project" />
+  </component>
   <component name="ProjectId" id="1THqWviIziqX0iiVgl1WR3xV8lS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\CMS\admin" />
       <recent name="C:\xampp\htdocs\CMS" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
+  <component name="ServiceViewManager">
+    <option name="viewStates">
       <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
       </list>
     </option>
   </component>
@@ -75,10 +93,36 @@
       <workItem from="1574658842626" duration="1594000" />
       <workItem from="1574666849167" duration="4017000" />
       <workItem from="1574761917476" duration="8310000" />
+      <workItem from="1578559059038" duration="106000" />
+      <workItem from="1578563836501" duration="444000" />
+      <workItem from="1578657993491" duration="3149000" />
+      <workItem from="1578892137197" duration="1806000" />
+      <workItem from="1579003605644" duration="1217000" />
+      <workItem from="1579066273379" duration="3913000" />
+      <workItem from="1579151949576" duration="6635000" />
+      <workItem from="1579262728866" duration="6901000" />
+      <workItem from="1579501207770" duration="3589000" />
+      <workItem from="1579600937523" duration="9897000" />
+      <workItem from="1579669731567" duration="1266000" />
+      <workItem from="1580101697649" duration="12241000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578658052737">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578658052737" />
+    <state x="461" y="163" key="SettingsEditor" timestamp="1579620639560">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579620639560" />
+    <state x="621" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1580102794508">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="621" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580102794508" />
   </component>
 </project>
