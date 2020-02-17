@@ -1,5 +1,5 @@
 <?php
-
+// Queris Shesamowmebeli function xom yvelaperi kargad weria
 function confirmQuery($result){
 
     global $connection;
