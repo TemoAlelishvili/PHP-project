@@ -41,9 +41,9 @@
             while ($row = mysqli_fetch_assoc($select_categories_id)) {
                 $cat_id = $row['cat_id'];
                 $cat_title = $row['cat_title'];
-            }
+                echo "<td>$cat_title</td>";
+}
 
-    echo "<td>$cat_title</td>";
 
 
     echo "<td>$post_status</td>";
