@@ -8,9 +8,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ComposerSettings">
-    <execution>
-      <executable />
-    </execution>
+    <execution />
   </component>
   <component name="DatabaseView">
     <option name="SHOW_INTERMEDIATE" value="true" />
@@ -33,32 +31,19 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
-    <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\CMS\admin" />
       <recent name="C:\xampp\htdocs\CMS" />
     </key>
-  </component>
-  <component name="ServiceViewManager">
-    <option name="viewStates">
-      <list>
-        <serviceView>
-          <treeState>
-            <expand />
-            <select />
-          </treeState>
-        </serviceView>
-      </list>
-    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -112,36 +97,47 @@
       <workItem from="1582634250150" duration="647000" />
       <workItem from="1582699430513" duration="601000" />
       <workItem from="1582702176721" duration="7969000" />
+      <workItem from="1582780823746" duration="1172000" />
+      <workItem from="1583388452397" duration="500000" />
+      <workItem from="1583389137074" duration="1983000" />
+      <workItem from="1583472705447" duration="2444000" />
+      <workItem from="1583495237119" duration="1180000" />
+      <workItem from="1583732578211" duration="1581000" />
+      <workItem from="1586156270934" duration="1695000" />
+      <workItem from="1586420759177" duration="596000" />
+      <workItem from="1586760206455" duration="7370000" />
+      <workItem from="1588432159196" duration="607000" />
+      <workItem from="1590522064665" duration="360000" />
+      <workItem from="1590522444326" duration="37000" />
+      <workItem from="1590522497182" duration="44000" />
+      <workItem from="1590522556655" duration="705000" />
+      <workItem from="1590523284535" duration="1808000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="1" />
+    <option name="version" value="2" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1578658052737">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="414" y="176" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1578658052737" />
     <state x="735" y="311" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582702868178">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="735" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582702868178" />
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1581419802559">
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583388921914">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1581419802559" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1580394371275">
+    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583388921914" />
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1590522061856">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1580394371275" />
-    <state x="461" y="163" key="SettingsEditor" timestamp="1579620639560">
+    <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590522061856" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1590524143394">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="461" y="163" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1579620639560" />
-    <state x="621" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1582702178586">
+    <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590524143394" />
+    <state x="621" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1586760534197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="621" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582702178586" />
+    <state x="621" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586760534197" />
   </component>
 </project>

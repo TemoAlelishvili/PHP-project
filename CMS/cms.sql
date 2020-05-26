@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.2
+-- version 5.0.2
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Feb 17, 2020 at 02:18 PM
+-- Generation Time: May 26, 2020 at 10:47 PM
 -- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.26
+-- PHP Version: 7.2.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -46,6 +45,29 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `comments`
+--
+
+CREATE TABLE `comments` (
+  `comment_id` int(3) NOT NULL,
+  `comment_post_id` int(3) NOT NULL,
+  `comment_author` varchar(255) NOT NULL,
+  `comment_email` varchar(255) NOT NULL,
+  `comment_content` text NOT NULL,
+  `comment_status` varchar(255) NOT NULL,
+  `comment_date` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `comments`
+--
+
+INSERT INTO `comments` (`comment_id`, `comment_post_id`, `comment_author`, `comment_email`, `comment_content`, `comment_status`, `comment_date`) VALUES
+(1, 12, '3', '3@3.com', '3', 'approved', '2020-05-26');
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `posts`
 --
 
@@ -67,13 +89,10 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`post_id`, `post_category_id`, `post_title`, `post_author`, `post_date`, `post_image`, `post_content`, `post_tags`, `post_comment_count`, `post_status`) VALUES
-(11, 2, 'gio00', 'gio0', '2020-01-31', '5.jpg', 'asdasdasd0\r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        \r\n        ', 'asdasd0', 4, 'asdasd0'),
 (12, 1, '1', '1', '2020-01-31', '1.jpg', '1', '1', 4, '1'),
 (13, 2, '2', '2', '2020-01-31', '2.jpg', '2', '2', 4, '2'),
 (14, 3, '3', '3', '2020-01-31', '3.jpg', '3', '3', 4, '3'),
-(15, 4, '4', '4', '2020-01-31', '4.jpg', '4', '4', 4, '4'),
-(16, 8, '', '', '2020-02-04', '', '', '', 4, ''),
-(17, 9, 'temoie', 'temoie', '2020-02-05', '3.jpg', 'temoie', 'temoie', 4, 'temoie');
+(18, 2, '5', '5', '2020-05-26', '5.jpg', '5', '5', 4, '5');
 
 --
 -- Indexes for dumped tables
@@ -84,6 +103,12 @@ INSERT INTO `posts` (`post_id`, `post_category_id`, `post_title`, `post_author`,
 --
 ALTER TABLE `categories`
   ADD PRIMARY KEY (`cat_id`);
+
+--
+-- Indexes for table `comments`
+--
+ALTER TABLE `comments`
+  ADD PRIMARY KEY (`comment_id`);
 
 --
 -- Indexes for table `posts`
@@ -107,10 +132,16 @@ ALTER TABLE `categories`
   MODIFY `cat_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 
 --
+-- AUTO_INCREMENT for table `comments`
+--
+ALTER TABLE `comments`
+  MODIFY `comment_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
+  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

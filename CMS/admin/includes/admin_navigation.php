@@ -49,7 +49,7 @@
             </li>
 
             <li>
-                <a href="blank-page.html1"><i class="fa fa-fw fa-file"></i>Comments </a>
+                <a href="./comments.php"><i class="fa fa-fw fa-file"></i>Comments </a>
             </li>
 
             <li>
