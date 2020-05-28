@@ -27,13 +27,10 @@
         $comment_status = $row['comment_status'];
         $comment_date = $row['comment_date'];
 
-
-
         echo "<tr>";
         echo "<td>$comment_id</td>";
         echo "<td>$comment_author</td>";
         echo "<td>$comment_content</td>";
-
 
 //        $query = "SELECT * FROM categories WHERE cat_id = $post_category_id ";
 //        $select_categories_id = mysqli_query($connection, $query);
@@ -56,14 +53,10 @@
         }
 
 
-
-
-
-
         echo "<td>$comment_date</td>";
-        echo "<td><a href='posts.php?source=edit_post&p_id={}'>Approve</a></td>";
-        echo "<td><a href='posts.php?delete={}'>Unapprove</a></td>";
-        echo "<td><a href='posts.php?delete={}'>Delete</a></td>";
+        echo "<td><a href='comments.php?aprove={$comment_id}'>Approve</a></td>";
+        echo "<td><a href='comments.php?unaprove={$comment_id}'>Unapprove</a></td>";
+        echo "<td><a href='comments.php?delete=$comment_id'>Delete</a></td>";
         echo "</tr>";
 
     }
@@ -72,13 +65,29 @@
     </tbody>
 </table>
 
-
-<!--delete post-->
+<!--delete comment-->
 <?php
+
 if (isset($_GET['delete'])){
-    $the_post_id = $_GET['delete'];
-    $query = "DELETE FROM posts WHERE post_id = {$the_post_id} ";
+    $the_comment_id = $_GET['delete'];
+    $query = "DELETE FROM comments WHERE comment_id = {$the_comment_id} ";
     $delete_query = mysqli_query($connection, $query);
-    header("Location: posts.php");
+    header("Location: comments.php");
+}
+
+//unapprove comment
+
+if (isset($_GET['unaprove'])){
+    $the_comment_id = $_GET['unaprove'];
+    $query = "UPDATE comments SET comment_status = 'Unapproved' WHERE comment_id = $the_comment_id ";
+    $unapprove_comment_query = mysqli_query($connection, $query);
+    header("Location: comments.php");
+}
+
+if (isset($_GET['aprove'])){
+    $the_comment_id = $_GET['aprove'];
+    $query = "UPDATE comments SET comment_status = 'Approved' WHERE comment_id = $the_comment_id ";
+    $approve_comment_query = mysqli_query($connection, $query);
+    header("Location: comments.php");
 }
 ?>

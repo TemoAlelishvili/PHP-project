@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2020 at 10:47 PM
+-- Generation Time: May 28, 2020 at 09:21 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -63,7 +63,8 @@ CREATE TABLE `comments` (
 --
 
 INSERT INTO `comments` (`comment_id`, `comment_post_id`, `comment_author`, `comment_email`, `comment_content`, `comment_status`, `comment_date`) VALUES
-(1, 12, '3', '3@3.com', '3', 'approved', '2020-05-26');
+(26, 13, '2', '2@GMAIL.COM', '2222222222222222222', 'Approved', '2020-05-28'),
+(27, 13, '2', '2@GMAIL.COM', '222222222222222222', 'Approved', '2020-05-28');
 
 -- --------------------------------------------------------
 
@@ -89,10 +90,10 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`post_id`, `post_category_id`, `post_title`, `post_author`, `post_date`, `post_image`, `post_content`, `post_tags`, `post_comment_count`, `post_status`) VALUES
-(12, 1, '1', '1', '2020-01-31', '1.jpg', '1', '1', 4, '1'),
-(13, 2, '2', '2', '2020-01-31', '2.jpg', '2', '2', 4, '2'),
-(14, 3, '3', '3', '2020-01-31', '3.jpg', '3', '3', 4, '3'),
-(18, 2, '5', '5', '2020-05-26', '5.jpg', '5', '5', 4, '5');
+(12, 1, '1', '1', '2020-01-31', '1.jpg', '1', '1', 0, '1'),
+(13, 2, '2', '2', '2020-01-31', '2.jpg', '2', '2', 1, 'published'),
+(14, 3, '3', '3', '2020-01-31', '3.jpg', '3', '3', 0, '3'),
+(18, 2, '5', '5', '2020-05-26', '5.jpg', '5', '5', 0, '5');
 
 --
 -- Indexes for dumped tables
@@ -135,7 +136,7 @@ ALTER TABLE `categories`
 -- AUTO_INCREMENT for table `comments`
 --
 ALTER TABLE `comments`
-  MODIFY `comment_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `comment_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT for table `posts`
