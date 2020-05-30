@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 28, 2020 at 09:21 PM
+-- Generation Time: May 30, 2020 at 06:36 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -95,6 +95,33 @@ INSERT INTO `posts` (`post_id`, `post_category_id`, `post_title`, `post_author`,
 (14, 3, '3', '3', '2020-01-31', '3.jpg', '3', '3', 0, '3'),
 (18, 2, '5', '5', '2020-05-26', '5.jpg', '5', '5', 0, '5');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users`
+--
+
+CREATE TABLE `users` (
+  `user_id` int(3) NOT NULL,
+  `username` varchar(255) NOT NULL,
+  `user_password` varchar(255) NOT NULL,
+  `user_firstname` varchar(255) NOT NULL,
+  `user_lastname` varchar(255) NOT NULL,
+  `user_email` varchar(255) NOT NULL,
+  `user_iamge` text NOT NULL,
+  `user_role` varchar(255) NOT NULL,
+  `randSalt` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`user_id`, `username`, `user_password`, `user_firstname`, `user_lastname`, `user_email`, `user_iamge`, `user_role`, `randSalt`) VALUES
+(1, 'rico', '123', 'Ricoo', 'Suave ', 'ricosuave@gmail.com', '', 'subscriber', ''),
+(2, 'giuna', '123', 'gio', 'giodze', 'giuna@lt.com', '', 'admin', ''),
+(4, 'tengiaa', '123', 'tengo', 'tengia', 'sadas@dasd', '', 'subscriber', '');
+
 --
 -- Indexes for dumped tables
 --
@@ -123,6 +150,12 @@ ALTER TABLE `posts`
   ADD KEY `post_category_id_5` (`post_category_id`);
 
 --
+-- Indexes for table `users`
+--
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`user_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -143,6 +176,12 @@ ALTER TABLE `comments`
 --
 ALTER TABLE `posts`
   MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

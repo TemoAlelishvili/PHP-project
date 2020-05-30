@@ -27,7 +27,7 @@
                         if ($post_status !== 'published'){
                             echo "<h1>No Posts Sorry</h1>";
                         } else {
-                            
+
                         ?>
 
                 <h1 class="page-header">
