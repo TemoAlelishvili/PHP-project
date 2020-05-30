@@ -23,11 +23,12 @@
     <property name="DatabaseDriversLRU" value="mysql" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/admin/includes" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/includes" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\CMS\includes" />
       <recent name="C:\xampp\htdocs\CMS\admin\includes" />
       <recent name="C:\xampp\htdocs\CMS\admin" />
       <recent name="C:\xampp\htdocs\CMS" />
@@ -103,7 +104,7 @@
       <workItem from="1590598367760" duration="5798000" />
       <workItem from="1590677018355" duration="21696000" />
       <workItem from="1590764598242" duration="1626000" />
-      <workItem from="1590838945319" duration="7626000" />
+      <workItem from="1590838945319" duration="9837000" />
     </task>
     <servers />
   </component>

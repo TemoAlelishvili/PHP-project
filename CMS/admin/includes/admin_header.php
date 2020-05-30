@@ -4,6 +4,14 @@
 <?php ob_start(); ?>
 <?php session_start(); ?>
 
+<!--aq vamowmebt sesias tu romeli roli modis da imis mixedvit vtvirtavt pages-->
+<?php
+    if (!isset($_SESSION['user_role'])){
+
+            header("Location: ../index.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
