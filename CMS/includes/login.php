@@ -35,6 +35,5 @@ if ($username === $db_username && $password === $db_user_password ){
 }  else {
     header("Location: ../index.php");
 }
-
 }
 ?>
