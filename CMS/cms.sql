@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 30, 2020 at 06:36 PM
+-- Generation Time: Jun 02, 2020 at 12:17 AM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -40,7 +40,8 @@ INSERT INTO `categories` (`cat_id`, `cat_title`) VALUES
 (1, 'Bootstrap'),
 (2, 'Javascript'),
 (3, 'PHP'),
-(12, 'Example Category');
+(12, 'Example Category'),
+(13, 'HTML5');
 
 -- --------------------------------------------------------
 
@@ -64,7 +65,7 @@ CREATE TABLE `comments` (
 
 INSERT INTO `comments` (`comment_id`, `comment_post_id`, `comment_author`, `comment_email`, `comment_content`, `comment_status`, `comment_date`) VALUES
 (26, 13, '2', '2@GMAIL.COM', '2222222222222222222', 'Approved', '2020-05-28'),
-(27, 13, '2', '2@GMAIL.COM', '222222222222222222', 'Approved', '2020-05-28');
+(27, 13, '2', '2@GMAIL.COM', '222222222222222222', 'Unapproved', '2020-05-28');
 
 -- --------------------------------------------------------
 
@@ -93,7 +94,8 @@ INSERT INTO `posts` (`post_id`, `post_category_id`, `post_title`, `post_author`,
 (12, 1, '1', '1', '2020-01-31', '1.jpg', '1', '1', 0, '1'),
 (13, 2, '2', '2', '2020-01-31', '2.jpg', '2', '2', 1, 'published'),
 (14, 3, '3', '3', '2020-01-31', '3.jpg', '3', '3', 0, '3'),
-(18, 2, '5', '5', '2020-05-26', '5.jpg', '5', '5', 0, '5');
+(18, 2, '5', '5', '2020-05-26', '5.jpg', '5', '5', 0, '5'),
+(19, 1, '6', '6', '2020-06-02', '4.jpg', '6\r\n        \r\n        ', '6', 0, 'draft');
 
 -- --------------------------------------------------------
 
@@ -118,8 +120,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `username`, `user_password`, `user_firstname`, `user_lastname`, `user_email`, `user_iamge`, `user_role`, `randSalt`) VALUES
-(1, 'rico', '123', 'Ricoo', 'Suave ', 'ricosuave@gmail.com', '', 'subscriber', ''),
-(2, 'giuna', '123', 'gio', 'giodze', 'giuna@lt.com', '', 'admin', ''),
+(1, 'rico', '123', 'Ricoo', 'Suave ', 'ricosuave@gmail.com', '', 'admin', ''),
+(2, 'giuna', '123', 'gioo', 'giodze ', 'giuna@lt.com', '', 'subscriber', ''),
 (4, 'tengiaa', '123', 'tengo', 'tengia', 'sadas@dasd', '', 'subscriber', '');
 
 --
@@ -163,7 +165,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `categories`
 --
 ALTER TABLE `categories`
-  MODIFY `cat_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `cat_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- AUTO_INCREMENT for table `comments`
@@ -175,7 +177,7 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `users`
