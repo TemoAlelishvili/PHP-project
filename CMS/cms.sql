@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2020 at 12:17 AM
+-- Generation Time: Jun 15, 2020 at 11:20 PM
 -- Server version: 10.4.11-MariaDB
 -- PHP Version: 7.2.30
 
@@ -91,11 +91,13 @@ CREATE TABLE `posts` (
 --
 
 INSERT INTO `posts` (`post_id`, `post_category_id`, `post_title`, `post_author`, `post_date`, `post_image`, `post_content`, `post_tags`, `post_comment_count`, `post_status`) VALUES
-(12, 1, '1', '1', '2020-01-31', '1.jpg', '1', '1', 0, '1'),
-(13, 2, '2', '2', '2020-01-31', '2.jpg', '2', '2', 1, 'published'),
-(14, 3, '3', '3', '2020-01-31', '3.jpg', '3', '3', 0, '3'),
-(18, 2, '5', '5', '2020-05-26', '5.jpg', '5', '5', 0, '5'),
-(19, 1, '6', '6', '2020-06-02', '4.jpg', '6\r\n        \r\n        ', '6', 0, 'draft');
+(12, 1, '1', '1', '2020-06-16', '1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum metus pellentesque risus blandit vestibulum. Praesent rhoncus orci in vehicula gravida. Cras id massa vel ex porttitor auctor et id erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..</p>', '1', 0, 'published'),
+(13, 1, '2', '2', '2020-06-15', '2.jpg', '<p>2</p>', '2', 1, 'published'),
+(14, 1, '3', '3', '2020-06-15', '3.jpg', '<p>3</p>', '3', 0, 'published'),
+(18, 1, '5', '5', '2020-06-11', '5.jpg', '<p>5</p>', '5', 0, 'published'),
+(19, 1, '6', '6', '2020-06-10', '4.jpg', '<table style=\"border-collapse: collapse; width: 100%; height: 72px;\" border=\"1\">\r\n<tbody>\r\n<tr style=\"height: 18px;\">\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n</tr>\r\n<tr style=\"height: 18px;\">\r\n<td style=\"width: 20%; height: 18px;\">dfs</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdfsdfsdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdfsd</td>\r\n</tr>\r\n<tr style=\"height: 18px;\">\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdfdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n</tr>\r\n<tr style=\"height: 18px;\">\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>6</p>', '6', 0, 'draft'),
+(20, 1, 'temo', 'temo', '2020-06-02', '2.jpg', 'temo\r\n        \r\n        ', 'temo', 0, 'published'),
+(21, 12, '7', '7', '2020-06-16', '3.jpg', '<p>333</p>', '3', 0, 'draft');
 
 -- --------------------------------------------------------
 
@@ -122,7 +124,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `username`, `user_password`, `user_firstname`, `user_lastname`, `user_email`, `user_iamge`, `user_role`, `randSalt`) VALUES
 (1, 'rico', '123', 'Ricoo', 'Suave ', 'ricosuave@gmail.com', '', 'admin', ''),
 (2, 'giuna', '123', 'gioo', 'giodze ', 'giuna@lt.com', '', 'subscriber', ''),
-(4, 'tengiaa', '123', 'tengo', 'tengia', 'sadas@dasd', '', 'subscriber', '');
+(4, 'tengiaa', '123', 'tengo', 'tengia', 'sadas@dasd', '', 'subscriber', ''),
+(5, 'santa', '123', 'temo', 'aleli', 'Santa@gmail.com', '', 'admin', '');
 
 --
 -- Indexes for dumped tables
@@ -177,13 +180,13 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
