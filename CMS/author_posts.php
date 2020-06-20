@@ -15,14 +15,10 @@
 
             if (isset($_GET['p_id'])){
                 $the_post_id = $_GET['p_id'];
-                $view_query = "UPDATE posts SET post_views_count = post_views_count + 1 WHERE post_id = $the_post_id  ";
-                $send_query = mysqli_query($connection, $view_query);
-                if (!$send_query){
-                    die("Query Failed" . mysqli_error($connection));
-                }
+                $the_post_author = $_GET['author'];
+            }
 
-
-            $query = "SELECT * FROM posts WHERE post_id = $the_post_id ";
+            $query = "SELECT * FROM posts WHERE post_author = '{$the_post_author}' ";
             $select_all_posts_query = mysqli_query($connection,$query);
             while ($row = mysqli_fetch_assoc($select_all_posts_query)){
 
@@ -44,8 +40,7 @@
                     <a href="#"><?php echo $post_title ?></a>
                 </h2>
                 <p class="lead">
-                    by <a href="index.php"><?php echo $post_author ?></a>
-                </p>
+                    All Posts From <?php echo $post_author ?>
                 <p><span class="glyphicon glyphicon-time"></span> <?php echo $post_date ?></p>
                 <hr>
                 <img class="img-responsive" src="images/<?php echo $post_image ?>" alt="">
@@ -56,8 +51,6 @@
 
 
                 <?php
-            } } else {
-                header("Location: index.php");
             }
             ?>
 
@@ -88,24 +81,24 @@
             ?>
 
             <!-- Comments Form -->
-            <div class="well">
-                <h4>Leave a Comment:</h4>
-                <form action="" method="post"  role="form">
-                    <div class="form-group">
-                        <label for="Author">Author</label>
-                        <input type="text"  class="form-control" name="comment_author">
-                    </div>
-                    <div class="form-group">
-                        <label for="Email">Email</label>
-                        <input type="email"  class="form-control" name="comment_email">
-                    </div>
-                    <div class="form-group">
-                        <label for="comment">Your Comment</label>
-                        <textarea name="comment_content" class="form-control" rows="3"></textarea>
-                    </div>
-                    <button type="submit" name="create_comment" class="btn btn-primary">Submit</button>
-                </form>
-            </div>
+<!--            <div class="well">-->
+<!--                <h4>Leave a Comment:</h4>-->
+<!--                <form action="" method="post"  role="form">-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="Author">Author</label>-->
+<!--                        <input type="text"  class="form-control" name="comment_author">-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="Email">Email</label>-->
+<!--                        <input type="email"  class="form-control" name="comment_email">-->
+<!--                    </div>-->
+<!--                    <div class="form-group">-->
+<!--                        <label for="comment">Your Comment</label>-->
+<!--                        <textarea name="comment_content" class="form-control" rows="3"></textarea>-->
+<!--                    </div>-->
+<!--                    <button type="submit" name="create_comment" class="btn btn-primary">Submit</button>-->
+<!--                </form>-->
+<!--            </div>-->
 
             <hr>
 
@@ -151,3 +144,5 @@
     <hr>
 
     <?php include "includes/footer.php"?>
+
+

@@ -21,17 +21,18 @@
   </component>
   <component name="PropertiesComponent">
     <property name="DatabaseDriversLRU" value="mysql" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\CMS" />
       <recent name="C:\xampp\htdocs\CMS\admin" />
       <recent name="C:\xampp\htdocs\CMS\includes" />
       <recent name="C:\xampp\htdocs\CMS\admin\includes" />
-      <recent name="C:\xampp\htdocs\CMS" />
     </key>
   </component>
   <component name="SvnConfiguration">
@@ -113,6 +114,12 @@
       <workItem from="1591823407698" duration="2694000" />
       <workItem from="1591885469232" duration="5047000" />
       <workItem from="1592247440220" duration="7042000" />
+      <workItem from="1592548504528" duration="327000" />
+      <workItem from="1592548852555" duration="322000" />
+      <workItem from="1592549179046" duration="6902000" />
+      <workItem from="1592574541907" duration="1439000" />
+      <workItem from="1592581092255" duration="1186000" />
+      <workItem from="1592643974191" duration="14534000" />
     </task>
     <servers />
   </component>
@@ -124,25 +131,23 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="552" y="178" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590841449537" />
-    <state x="735" y="311" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1582702868178">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="735" y="311" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1582702868178" />
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1583388921914">
-      <screen x="0" y="0" width="1920" height="1040" />
-    </state>
-    <state x="640" y="257" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1583388921914" />
-    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1591127487346">
+    <state x="740" y="276" key="FileChooserDialogImpl" timestamp="1592549176544">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="740" y="276" key="FileChooserDialogImpl/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1591127487346" />
-    <state x="461" y="165" key="SettingsEditor" timestamp="1590841179154">
+    <state x="740" y="276" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592549176544" />
+    <state x="461" y="165" key="SettingsEditor" timestamp="1592549246885">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="165" key="SettingsEditor/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1590841179154" />
+    <state x="461" y="165" key="SettingsEditor/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592549246885" />
     <state x="621" y="342" key="com.intellij.ide.util.TipDialog" timestamp="1586760534197">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="621" y="342" key="com.intellij.ide.util.TipDialog/0.0.1920.1040/1920.0.1920.1040@0.0.1920.1040" timestamp="1586760534197" />
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup" timestamp="1592654634877">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="623" y="225" width="672" height="678" key="search.everywhere.popup/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1592654634877" />
   </component>
 </project>

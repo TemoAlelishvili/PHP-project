@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 15, 2020 at 11:20 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.2.30
+-- Generation Time: Jun 20, 2020 at 05:51 PM
+-- Server version: 10.4.13-MariaDB
+-- PHP Version: 7.4.7
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -83,21 +83,33 @@ CREATE TABLE `posts` (
   `post_content` text NOT NULL,
   `post_tags` varchar(255) NOT NULL,
   `post_comment_count` int(11) NOT NULL,
-  `post_status` varchar(255) NOT NULL DEFAULT 'draft'
+  `post_status` varchar(255) NOT NULL DEFAULT 'draft',
+  `post_views_count` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `posts`
 --
 
-INSERT INTO `posts` (`post_id`, `post_category_id`, `post_title`, `post_author`, `post_date`, `post_image`, `post_content`, `post_tags`, `post_comment_count`, `post_status`) VALUES
-(12, 1, '1', '1', '2020-06-16', '1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum metus pellentesque risus blandit vestibulum. Praesent rhoncus orci in vehicula gravida. Cras id massa vel ex porttitor auctor et id erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..</p>', '1', 0, 'published'),
-(13, 1, '2', '2', '2020-06-15', '2.jpg', '<p>2</p>', '2', 1, 'published'),
-(14, 1, '3', '3', '2020-06-15', '3.jpg', '<p>3</p>', '3', 0, 'published'),
-(18, 1, '5', '5', '2020-06-11', '5.jpg', '<p>5</p>', '5', 0, 'published'),
-(19, 1, '6', '6', '2020-06-10', '4.jpg', '<table style=\"border-collapse: collapse; width: 100%; height: 72px;\" border=\"1\">\r\n<tbody>\r\n<tr style=\"height: 18px;\">\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n</tr>\r\n<tr style=\"height: 18px;\">\r\n<td style=\"width: 20%; height: 18px;\">dfs</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdfsdfsdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdfsd</td>\r\n</tr>\r\n<tr style=\"height: 18px;\">\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdfdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n<td style=\"width: 20%; height: 18px;\">sdf</td>\r\n</tr>\r\n<tr style=\"height: 18px;\">\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n<td style=\"width: 20%; height: 18px;\">&nbsp;</td>\r\n</tr>\r\n</tbody>\r\n</table>\r\n<p>6</p>', '6', 0, 'draft'),
-(20, 1, 'temo', 'temo', '2020-06-02', '2.jpg', 'temo\r\n        \r\n        ', 'temo', 0, 'published'),
-(21, 12, '7', '7', '2020-06-16', '3.jpg', '<p>333</p>', '3', 0, 'draft');
+INSERT INTO `posts` (`post_id`, `post_category_id`, `post_title`, `post_author`, `post_date`, `post_image`, `post_content`, `post_tags`, `post_comment_count`, `post_status`, `post_views_count`) VALUES
+(12, 1, '1', '1', '2020-06-16', '1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum metus pellentesque risus blandit vestibulum. Praesent rhoncus orci in vehicula gravida. Cras id massa vel ex porttitor auctor et id erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..</p>', '1', 0, 'published', 0),
+(13, 1, '2', '2', '2020-06-20', '4.jpg', '<p>2</p>', '2', 1, 'published', 0),
+(14, 1, '3', '3', '2020-06-15', '3.jpg', '<p>3</p>', '3', 0, 'published', 0),
+(23, 2, '2', '2', '2020-06-20', '3.jpg', '<p>2</p>', '2', 0, 'published', 0),
+(25, 1, '1', '1', '2020-06-20', '1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum metus pellentesque risus blandit vestibulum. Praesent rhoncus orci in vehicula gravida. Cras id massa vel ex porttitor auctor et id erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..</p>', '1', 0, 'published', 0),
+(26, 1, '2', '2', '2020-06-20', '2.jpg', '<p>2</p>', '2', 0, 'published', 0),
+(27, 1, '2', '2', '2020-06-20', '2.jpg', '<p>2</p>', '2', 0, 'published', 0),
+(28, 1, '1', '1', '2020-06-20', '1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum metus pellentesque risus blandit vestibulum. Praesent rhoncus orci in vehicula gravida. Cras id massa vel ex porttitor auctor et id erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..</p>', '1', 0, 'published', 0),
+(29, 2, '2', '2', '2020-06-20', '3.jpg', '<p>2</p>', '2', 0, 'published', 0),
+(30, 1, '3', '3', '2020-06-20', '3.jpg', '<p>3</p>', '3', 0, 'published', 0),
+(31, 1, '2', '2', '2020-06-20', '2.jpg', '<p>2</p>', '2', 0, 'published', 0),
+(32, 1, '1', '1', '2020-06-20', '1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum metus pellentesque risus blandit vestibulum. Praesent rhoncus orci in vehicula gravida. Cras id massa vel ex porttitor auctor et id erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..</p>', '1', 0, 'published', 0),
+(33, 1, '1', '1', '2020-06-20', '1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum metus pellentesque risus blandit vestibulum. Praesent rhoncus orci in vehicula gravida. Cras id massa vel ex porttitor auctor et id erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..</p>', '1', 0, 'published', 0),
+(34, 1, '2', '2', '2020-06-20', '2.jpg', '<p>2</p>', '2', 0, 'published', 0),
+(35, 1, '3', '3', '2020-06-20', '3.jpg', '<p>3</p>', '3', 0, 'published', 0),
+(36, 1, '2', '2', '2020-06-20', '5.jpg', '<p>2</p>', '2', 0, 'published', 0),
+(37, 1, '1', '1', '2020-06-20', '1.jpg', '<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut fermentum metus pellentesque risus blandit vestibulum. Praesent rhoncus orci in vehicula gravida. Cras id massa vel ex porttitor auctor et id erat. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas..</p>', '1', 0, 'published', 0),
+(38, 1, '2', '2', '2020-06-20', '2.jpg', '<p>2</p>', '2', 0, 'published', 0);
 
 -- --------------------------------------------------------
 
@@ -114,7 +126,7 @@ CREATE TABLE `users` (
   `user_email` varchar(255) NOT NULL,
   `user_iamge` text NOT NULL,
   `user_role` varchar(255) NOT NULL,
-  `randSalt` varchar(255) NOT NULL
+  `randSalt` varchar(255) NOT NULL DEFAULT '$2y$10$iusesomecrazystrings22'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -125,7 +137,22 @@ INSERT INTO `users` (`user_id`, `username`, `user_password`, `user_firstname`, `
 (1, 'rico', '123', 'Ricoo', 'Suave ', 'ricosuave@gmail.com', '', 'admin', ''),
 (2, 'giuna', '123', 'gioo', 'giodze ', 'giuna@lt.com', '', 'subscriber', ''),
 (4, 'tengiaa', '123', 'tengo', 'tengia', 'sadas@dasd', '', 'subscriber', ''),
-(5, 'santa', '123', 'temo', 'aleli', 'Santa@gmail.com', '', 'admin', '');
+(5, 'santa', '123', 'temo', 'aleli', 'Santa@gmail.com', '', 'admin', ''),
+(6, 'zura', '123', 'zura', 'raurabi', 'zura@g.com', '', 'admin', '$2y$10$iusesomecrazystring22'),
+(7, 'gambit', '123', 'robers', 'Sandro', 'gambit344@gmail.com', '', 'subscriber', '$2y$10$iusesomecrazystring22'),
+(8, 'suave', '$1$z/DwvKg5$/mK8fXxftRNlU3adVT5IT.', '', '  ', 'suave@gmail.com', '', 'subscriber', '$2y$10$iusesomecrazystring22');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `users_online`
+--
+
+CREATE TABLE `users_online` (
+  `id` int(11) NOT NULL,
+  `session` varchar(255) NOT NULL,
+  `teme` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Indexes for dumped tables
@@ -161,6 +188,12 @@ ALTER TABLE `users`
   ADD PRIMARY KEY (`user_id`);
 
 --
+-- Indexes for table `users_online`
+--
+ALTER TABLE `users_online`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -180,13 +213,19 @@ ALTER TABLE `comments`
 -- AUTO_INCREMENT for table `posts`
 --
 ALTER TABLE `posts`
-  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `post_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=39;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(3) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+
+--
+-- AUTO_INCREMENT for table `users_online`
+--
+ALTER TABLE `users_online`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
